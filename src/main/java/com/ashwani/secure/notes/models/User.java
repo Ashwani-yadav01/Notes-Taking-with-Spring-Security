@@ -52,7 +52,7 @@ public class User {
     private LocalDate accountExpiryDate;
 
     private String twoFactorSecret;
-    private boolean isTwoFactor = false;
+    private boolean isTwoFactorEnabled = false;
     private String signUpMethod;
 
     @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.MERGE})
